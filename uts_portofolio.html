@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Portofolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+*{
+	margin:0px;
+	padding:0px;
+}
+nav {
+    background-color: aqua;
+    color: black;
+    font-size: 30px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav a{
+	font-size:20px;
+	margin:0 5% 0 5%;
+}
+nav a:hover{
+	color:#43A047;
+}
+#hero_section{
+	background-color:hsl(160, 100%, 90%);
+	display:flex;
+	flex-direction:column;
+	height:100vh;
+	align-items:center;
+	justify-content:center;
+}
+.profile-image {
+    max-width: 150px;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+content {
+	background-color:#228a72;
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-evenly;
+}
+content div img{
+	background-color:black;
+	border-radius:50%;
+	height:100px;
+	width:100px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	white-space:pre-line;
+	overflow:hidden;
+}
+main section{
+	margin:20px 10% 20px 10%;
+	display:grid;
+	grid-template:repeat(2,1fr)/repeat(3,1fr);
+	grid-column-gap:10px;
+	justify-items:center;
+}
+.project-tile{
+	margin-bottom:80px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.project-tile img{
+	width: 250px;
+}
+main{
+	background-color:#000000;
+	height:100vh;
+	padding-top:200px;
+	display:flex;
+	flex-direction:column;
+}
+main section div a img{
+	border:solid;
+	border-color:#03A9F4;
+	border-width:2px;
+	border-radius:10px;
+	height:120px;
+	width:auto;
+	overflow:hidden;
+}
+main section{
+		margin:20px 10% 20px 10%;
+		justify-items:center;
+}
+footer{
+	background-color:#A7FFEB;
+	height:100vh;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-evenly;
+}
+footer div a{
+	background-color:black;
+	border-radius:50%;
+	height:150px;
+	width:150px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	white-space:pre-line;
+	overflow:hidden;
+}
+footer div a:hover{
+	border-radius:50%;
+	box-shadow:
+		-5px 5px 10px,
+		5px -5px 10px,
+		5px 5px 10px,
+		-5px -5px 10px;
+}
+footer div a img{
+	border-radius:50%;
+}
+footer div p{
+	text-align:center;
+}
+footer{
+	background-color:#A7FFEB;
+	height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:space-evenly;
+}
+</style>
+<body>
+<nav id="navbar">
+	<a href="#hero_section">HERO SECTION</a>
+    <a href="#about_me">ABOUT ME SECTION</a>
+	<a href="#project_section">PROJECT SECTION</a>
+	<a href="#contact_me">CONTACT ME SECTION</a>
+</nav>
+<header id="hero_section">
+    <img src="1639377057537.jpg" class="profile-image">
+	<h1>Akhmad Yasin</h1>
+	<p>blogger</p>
+</header>
+<content id="about_me">
+	<caption>SKILL</caption>
+	<div class="skill">
+		<img src="https://th.bing.com/th/id/OIP.i__ByH7N0OGrWonQb0qXFwAAAA?rs=1&pid=ImgDetMain">
+		<p>HTML (Hypertext Markup Language) is the standard markup language for creating web pages.</p>
+	</div>
+
+	<div class="skill">
+		<img src="https://th.bing.com/th/id/R.c49a10788442a62f2a2f5d59e6a41b76?rik=FaPKijYdTOFg%2fQ&riu=http%3a%2f%2fscrap.php.xdomain.jp%2fwp-content%2fuploads%2fcss3.png&ehk=6jcHYQL6YCCPqdFU5OpUKfvZJVRJvO%2fhJu%2fiN0lLk%2f8%3d&risl=&pid=ImgRaw&r=0">
+		<p>CSS (Cascading Style Sheets) is used for styling and formatting web pages, enhancing their visual appeal.</p>
+	</div>
+
+	<div class="skill">
+		<img src="https://www.kindpng.com/picc/m/67-678384_transparent-javascript-icon-png-png-download.png">
+		<p>JavaScript is a programming language that adds interactivity to web pages, making them dynamic and engaging.</p>
+	</div>
+</content>
+<main id="project_section">
+	<section id="projects">
+		<div class="project-tile">
+		<a href="https://github.com/akhmadyasin/tugas_pemrogramanWeb.git"><img src="Screenshot 2023-11-17 193032.png"></a>
+			<div>Project1 <br> Web Statis</div>
+		</div>
+		<div class="project-tile">
+		<a href="https://github.com/akhmadyasin/tugas_pemrogramanWeb.git"><img src="Screenshot 2023-11-17 201141.png"></a>
+			<div>Project2 <br> Web Portofolio</div>
+		</div>
+		<div class="project-tile">
+		<a href="https://github.com/akhmadyasin/tugas_pemrogramanWeb.git"><img src="Screenshot 2023-07-10 135137.png"></a>
+			<div>Project3 <br> UI/UX</div>
+		</div>
+	</section>
+</main>
+<footer id="contact_me">
+	<div>
+		<a id="profile-link" href="https://www.facebook.com/akhmad.yasin.31"><img src="https://th.bing.com/th/id/OIP.lC-RuazN70z0X9dCTMqLHAHaHa?rs=1&pid=ImgDetMain" width="150px"></a>
+		<p>Facebook</p>
+	</div>
+	<div>
+		<a href="akhmadyasin704@gmail.com"><img src="https://www.thewindowsclub.com/wp-content/uploads/2020/10/Gmail-Logo.png" width="220px"></a>
+		<p>Gmail</p>
+	</div>
+	<div>
+		<a href="https://www.linkedin.com/in/akhmad-yasin-a17496254/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B5SaSUNWRSFKFt7Ib3845Kg%3D%3D"><img src="https://logospng.org/download/linkedin/logo-linkedin-icon-1536.png" width="175px"></a>
+		<p>LinkedIn</p>
+	</div>
+	<div>
+		<a href=""><img src="https://media.istockphoto.com/id/1264265220/id/vektor/ikon-telepon-simbol-aplikasi-panggilan-tanda-antarmuka-datar-logo-telepon-lama-bentuk.jpg?s=612x612&w=0&k=20&c=rqTsa2bX9elb3hs8XGLRGOk8ulW5eXegrUq_qbw0dMI=" width="175px"></a>
+		<p>Telepon</p>
+	</div>
+	<div>
+		<a href="https://github.com/akhmadyasin"><img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" width="175px"></a>
+		<p>Github</p>
+	</div>
+</footer>
+<script>
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			document.querySelector(this.getAttribute('href')).scrollIntoView({
+				behavior: 'smooth'
+			});
+		});
+	});
+</script>
+</body>
+</html>
